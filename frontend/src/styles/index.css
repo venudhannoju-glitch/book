@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* minimal custom styles */
+body{font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif}
+
+/* small helpers */
+.btn-primary{@apply bg-blue-600 text-white px-4 py-2 rounded inline-flex items-center gap-2}
+.shadow-card{box-shadow:0 6px 18px rgba(12,40,80,0.06)}
+
+/* responsive container utility */
+.container{@apply max-w-7xl mx-auto px-4}
+
+/* accessibility helpers */
+.focus-visible:focus{outline:2px solid #2563eb; outline-offset:2px}
+
+/* utility to truncate with ellipsis */
+.truncate-2{overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}

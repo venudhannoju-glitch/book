@@ -10,3 +10,6 @@ npm-debug.log
 /frontend/dist
 /.firebase
 /.idea
+# local temporary clones or forks
+book-upstream/
+book-verify/

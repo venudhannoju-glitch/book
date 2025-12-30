@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Campus Book - About the College</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <div class="container site-row">
+      <div class="logo">
+        <!-- Inline SVG logo (replace with your image if needed) -->
+        <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Campus Book logo">
+          <rect x="6" y="10" width="44" height="36" rx="2" fill="#0b71d0" />
+          <path d="M10 18c6-5 14-5 20 0v18c-6-5-14-5-20 0z" fill="#fff" opacity="0.9" />
+        </svg>
+        <div class="brand">Campus Book</div>
+      </div>
+
+      <nav aria-label="Main navigation">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#programs">Programs</a></li>
+          <li><a href="#admissions">Admissions</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="about" class="hero" aria-labelledby="about-heading">
+      <h1 id="about-heading">About Our College</h1>
+      <p>
+        Welcome to <strong>Campus Book College</strong> — a place of academic excellence, innovation, and community. We offer a diverse range of undergraduate and graduate programs designed to prepare students for meaningful careers and thoughtful citizenship.
+      </p>
+
+      <div class="facts" aria-hidden="false">
+        <div class="fact">
+          <h3>Founded</h3>
+          <p>Established in 1965 with a long tradition of teaching and research.</p>
+        </div>
+        <div class="fact">
+          <h3>Students</h3>
+          <p>Over 8,500 students across multiple campuses and online programs.</p>
+        </div>
+        <div class="fact">
+          <h3>Programs</h3>
+          <p>Engineering, Arts &amp; Sciences, Business, Education, and more.</p>
+        </div>
+      </div>
+
+      <section id="programs" style="margin-top:1.5rem">
+        <h2>Featured Programs</h2>
+        <ul>
+          <li>Bachelor of Science in Computer Science</li>
+          <li>Master of Business Administration</li>
+          <li>Bachelor of Arts in Communication</li>
+        </ul>
+      </section>
+    </section>
+
+    <section id="admissions" style="margin-top:2rem;">
+      <h2>Admissions & Contact</h2>
+      <p>Learn about our admission process, important dates, and financial aid options. If you have any questions, reach out to our admissions office:</p>
+      <address id="contact">
+        Admissions Office<br>
+        Email: <a href="mailto:admissions@campusbook.edu">admissions@campusbook.edu</a><br>
+        Phone: +1 (555) 123-4567
+      </address>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <small>© <span id="year"></span> Campus Book College. All rights reserved.</small>
+    </div>
+  </footer>
+
+  <script>
+    // Small script to set the current year automatically
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
